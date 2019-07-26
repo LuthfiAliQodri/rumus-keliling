@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp"
+    android:orientation="vertical"
+    tools:context=".PersegiPanjang">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:text="Keliling Persegi Panjnang"
+        android:paddingBottom="16dp"/>
+
+    <!--Panjang-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="@string/panjang" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idpanjang"
+        android:hint="Isi Panjang Yang Kalian Inginkan"
+        android:lines="1" />
+
+    <!--Lebar-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="@string/lebar" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idlebar"
+        android:hint="Isi Lebar Yang Kalian Inginkan"
+        android:lines="1" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/totalpersegipanjang"
+        android:id="@+id/submitpersegipanjang"/>
+
+    <!--Hasil-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hasilpersegipanjang"
+        android:id="@+id/idouthasilpersegipanjang"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>
