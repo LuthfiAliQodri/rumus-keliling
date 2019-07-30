@@ -67,11 +67,10 @@
         android:text="@string/total"
         android:id="@+id/submit"/>
 
-    !--Hasil-->
+    <!--Hasil-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hasil"
         android:id="@+id/thasil"
         android:gravity="center"
         android:textSize="24dp"

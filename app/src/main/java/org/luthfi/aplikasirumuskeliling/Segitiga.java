@@ -1,5 +1,7 @@
 package org.luthfi.aplikasirumuskeliling;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -31,11 +33,16 @@ public class Segitiga extends AppCompatActivity implements View.OnClickListener 
             String result = savedInstanceState.getString(STATE_RESULT);
             tHasil.setText(result);
 
+            Button btnhasil = findViewById(R.id.submit);
+            btnhasil.setOnClickListener(this);
+
     }
 }
 
     @Override
     public void onClick(View v) {
+        Intent data = new Intent();
+
         if (v.getId() == R.id.submit);
         String inputSisiA = eSisiA.getText().toString().trim();
         String inputSisiB = eSisiB.getText().toString().trim();
@@ -72,6 +79,10 @@ public class Segitiga extends AppCompatActivity implements View.OnClickListener 
             double volume = sisia + sisib + sisic;
             tHasil.setText(String.valueOf(volume));
         }
+        data.setData(Uri.parse(tHasil.getText().toString()));
+        setResult(RESULT_OK, data);
+
+        finish();
     }
 
     private Double toDouble(String str) {

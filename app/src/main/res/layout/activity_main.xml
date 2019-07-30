@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="16dp"
-    android:paddingTop="16dp"
-    android:paddingLeft="1dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="16dp"
     android:paddingRight="16dp"
+    android:paddingTop="8dp"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <Button
@@ -27,4 +27,14 @@
         android:layout_marginBottom="16dp"
         />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/view1"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:text="Hasil Keliling Segitiga" />
+    
 </LinearLayout>
